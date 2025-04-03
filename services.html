@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | XEMA ARTS MEDIA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('header').innerHTML = data);
+      
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('footer').innerHTML = data);
+    });
+  </script>
+</head>
+<body class="font-sans bg-gray-100">
+  <!-- Header -->
+  <div id="header"></div>
+
+  <!-- Services Hero -->
+  <section class="relative py-32 bg-gray-900 text-white">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <img src="https://images.pexels.com/photos/3568520/pexels-photo-3568520.jpeg" 
+         alt="Music Production" 
+         class="absolute inset-0 w-full h-full object-cover">
+    <div class="relative z-10 text-center px-4">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Our Services</h1>
+      <p class="text-xl md:text-2xl">Comprehensive creative solutions for artists and brands</p>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold mb-4">What We Offer</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">From music production to brand strategy, we provide end-to-end creative services to bring your vision to life.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Music Production -->
+        <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition">
+          <div class="text-red-500 text-4xl mb-4">
+            <i class="fas fa-music"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Music Production</h3>
+          <p class="text-gray-600 mb-4">Crafting high-quality soundscapes and professional tracks for artists and businesses alike.</p>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-start">
+              <i class="fas fa-check text-red-500 mt-1 mr-2"></i>
+              <span>Professional recording and mixing</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-red-500 mt-1 mr-2"></i>
+              <span>Custom composition and arrangement</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-red-500 mt-1 mr-2"></i>
+              <span>Sound design for brands</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Visual Design -->
+        <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition">
+          <div class="text-red-500 text-4xl mb-4">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Cover Artwork & Visual Design</h3>
+          <p class="text-gray-600 mb-4">Creating captivating visuals that reflect your artistic identity.</p>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-start">
+              <i class="fas fa-check text-red-500 mt-1 mr-2"></i>
+              <span>Album and single cover artwork</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-red-500 mt-1 mr-2"></i>
+              <span>Logo and brand identity design</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-red-500 mt-1 mr-2"></i>
+              <span>Promotional materials and merchandise</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Photo Shoots -->
+        <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition">
+          <div class="text-red-500 text-4xl mb-4">
+            <i class="fas fa-camera"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Photo Shoots</h3>
+          <p class="text-gray-600 mb-4">Professional photography to capture your artistic essence.</p>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-start">
+              <i class="fas fa-check text-red-500 mt-1 mr-2"></i>
+              <span>Artist portfolio development</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-red-500 mt-1 mr-2"></i>
+              <span>Brand and product photography</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-red-500 mt-1 mr-2"></i>
+              <span>Creative direction and styling</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Video Production -->
+        <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition">
+          <div class="text-red-500 text-4xl mb-4">
+            <i class="fas fa-video"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Video Production</h3>
+          <p class="text-gray-600 mb-4">Bringing your music and stories to life through visual media.</p>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-start">
+              <i class="fas fa-check text-red-500 mt-1 mr-2"></i>
+              <span>Lyric videos and animations</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-red-500 mt-1 mr-2"></i>
+              <span>Music videos and short films</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-red-500 mt-1 mr-2"></i>
+              <span>Brand commercials and ads</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-red-500 text-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Ready to Start Your Project?</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">Let's discuss how we can bring your creative vision to life.</p>
+      <a href="contact.html" 
+         class="bg-white hover:bg-gray-100 text-red-500 font-bold py-3 px-8 rounded-full transition duration-300">
+        Get in Touch
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Initiatives | XEMA ARTS MEDIA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('header').innerHTML = data);
+      
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('footer').innerHTML = data);
+    });
+  </script>
+</head>
+<body class="font-sans bg-gray-100">
+  <!-- Header -->
+  <div id="header"></div>
+
+  <!-- Initiatives Hero -->
+  <section class="relative py-32 bg-gray-900 text-white">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <img src="https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg" 
+         alt="Community Support" 
+         class="absolute inset-0 w-full h-full object-cover">
+    <div class="relative z-10 text-center px-4">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Social Initiatives</h1>
+      <p class="text-xl md:text-2xl">Creating positive change through creativity</p>
+    </div>
+  </section>
+
+  <!-- Impact Overview -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="text-3xl font-bold mb-4">Our Commitment to Society</h2>
+        <p class="text-gray-600">XEMA ARTS MEDIA stands as a pillar that helps many people in society including the poor, homeless, and orphans. We help bring up young artists and raise their talents while empowering youth to grow with the right standards.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 mb-16">
+        <div class="text-center">
+          <div class="text-red-500 text-5xl mb-4">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-2">150+</h3>
+          <p class="text-gray-600">Youths Mentored</p>
+        </div>
+        <div class="text-center">
+          <div class="text-red-500 text-5xl mb-4">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-2">24</h3>
+          <p class="text-gray-600">Community Events</p>
+        </div>
+        <div class="text-center">
+          <div class="text-red-500 text-5xl mb-4">
+            <i class="fas fa-hand-holding-heart"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-2">10+</h3>
+          <p class="text-gray-600">Supported Organizations</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Our Key Programs</h2>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Youth Development -->
+        <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
+          <div class="text-red-500 text-4xl mb-4">
+            <i class="fas fa-child"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Youth Development</h3>
+          <p class="text-gray-600 mb-4">We help youths grow with the right standards, preventing involvement in harmful activities like drug abuse and gang violence.</p>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-start">
+              <i class="fas fa-check text-red-500 mt-1 mr-2"></i>
+              <span>Creative skills training programs</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-red-500 mt-1 mr-2"></i>
+              <span>Peer pressure awareness campaigns</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-red-500 mt-1 mr-2"></i>
+              <span>Leadership development workshops</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Community Support -->
+        <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
+          <div class="text-red-500 text-4xl mb-4">
+            <i class="fas fa-hands-helping"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Community Support</h3>
+          <p class="text-gray-600 mb-4">We actively participate in public content and debates while supporting movements that benefit society.</p>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-start">
+              <i class="fas fa-check text-red-500 mt-1 mr-2"></i>
+              <span>Public awareness campaigns</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-red-500 mt-1 mr-2"></i>
+              <span>Donations to orphanages and shelters</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-red-500 mt-1 mr-2"></i>
+              <span>Community art projects</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get Involved -->
+  <section class="py-16 bg-red-500 text-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Want to Get Involved?</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">Join us in making a difference through creative empowerment.</p>
+      <a href="contact.html" 
+         class="bg-white hover:bg-gray-100 text-red-500 font-bold py-3 px-8 rounded-full transition duration-300">
+        Contact Us
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+</body>
+</html>

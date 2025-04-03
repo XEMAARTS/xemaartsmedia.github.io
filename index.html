@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XEMA ARTS MEDIA - Where Creativity Meets Innovation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script>
+    // Load header and footer components
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('header').innerHTML = data);
+      
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('footer').innerHTML = data);
+    });
+  </script>
+</head>
+<body class="font-sans bg-gray-100">
+  <!-- Header -->
+  <div id="header"></div>
+
+  <!-- Hero Section -->
+  <section class="relative h-screen flex items-center justify-center bg-gray-900 text-white">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <img src="https://images.pexels.com/photos/1670977/pexels-photo-1670977.jpeg" 
+         alt="Creative Studio" 
+         class="absolute inset-0 w-full h-full object-cover">
+    <div class="relative z-10 text-center px-4">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">XEMA ARTS MEDIA</h1>
+      <p class="text-xl md:text-2xl mb-8">Where Creativity Meets Innovation</p>
+      <a href="services.html" 
+         class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full transition duration-300">
+        Explore Our Services
+      </a>
+    </div>
+  </section>
+
+  <!-- Featured Services -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <div class="text-red-500 text-4xl mb-4">
+            <i class="fas fa-music"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Music Production</h3>
+          <p class="text-gray-600">High-quality soundscapes and professional tracks tailored to your artistic vision.</p>
+        </div>
+        
+        <!-- Service 2 -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <div class="text-red-500 text-4xl mb-4">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Visual Design</h3>
+          <p class="text-gray-600">Captivating album covers, logos, and promotional materials that tell your story.</p>
+        </div>
+        
+        <!-- Service 3 -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <div class="text-red-500 text-4xl mb-4">
+            <i class="fas fa-bullhorn"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Brand Strategy</h3>
+          <p class="text-gray-600">Strategic guidance to reach new audiences and enhance your brand visibility.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-16 bg-gray-900 text-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Ready to Elevate Your Creative Vision?</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">Partner with XEMA ARTS MEDIA to bring your artistic ideas to life.</p>
+      <a href="contact.html" 
+         class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full transition duration-300">
+        Contact Us Today
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+</body>
+</html>
